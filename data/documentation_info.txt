@@ -1,0 +1,6 @@
+TCGA_Barcode
+    link to Info:
+        https://docs.gdc.cancer.gov/Encyclopedia/pages/TCGA_Barcode/
+    Summary of Into:
+        how the Biospecimen Core Resource (BCR) assigns TCGA barcodes to uniquely identify participant samples and tie together clinical, genomic, and sequencing datasets across the TCGA network
+
