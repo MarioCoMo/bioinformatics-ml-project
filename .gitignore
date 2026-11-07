@@ -222,3 +222,7 @@ __marimo__/
 # datasets
 /data/raw/
 /data/processed/
+
+
+# reports
+reports/figures/
