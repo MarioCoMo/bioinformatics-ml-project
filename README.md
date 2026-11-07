@@ -25,6 +25,7 @@ Breast cancer (TCGA-BRCA) gene expression analysis: cancer vs. healthy samples.
 ## Project Structure
 
 ├── data/processed/     # Generated CSV files (not tracked in git)
+├── docs/               # Technical Knowledge Base
 ├── notebooks/          # Analysis pipeline, run in order
 ├── reports/            # Figures
 ├── src/                # Reusable functions (see src/README.md)
@@ -33,6 +34,11 @@ Breast cancer (TCGA-BRCA) gene expression analysis: cancer vs. healthy samples.
 ## Pipeline
 
 `01_data_processing.ipynb` | Builds raw counts and TPM matrices from the GDC TSV files, merges cancer and control samples | `src/data_process.py` |
+`02_data_qc.ipynb`         | Performs quality control on the merged count matrix and metadata, filters low-expression genes, applies variance 
+                            stabilizing transformation (VST), and assesses sample-level expression patterns and correlations |  `src/data_validation.py` 
+                            `src/visualization.py`|
+
+
 
 ## Getting Started
 
@@ -50,7 +56,3 @@ Raw data is downloaded from the [GDC portal](https://portal.gdc.cancer.gov/proje
 
 The analysis will include data inspection, exploratory analysis,
 preprocessing, baseline modeling, and model evaluation.
-
-## Team
-
-Add project contributors here.
