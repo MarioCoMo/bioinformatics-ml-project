@@ -37,7 +37,7 @@ def process_expression_data(
     data_dir : str | Path
         Root folder containing the TSV files (searched recursively).
     metadata_file : str | Path, optional
-        Metadata JSON file. Defaults to data_dir / "metadata.cancer.json".
+        Metadata JSON file. Defaults to data_dir / f"metadata.{suffix.lower()}.json".
     output_dir : str | Path
         Folder where the output CSV files are saved.
     output_prefix : str

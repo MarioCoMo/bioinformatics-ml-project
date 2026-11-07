@@ -2,9 +2,8 @@
 
 ## Overview
 
-This project investigates the relationships between transcription factors
-(TFs) and gene expression patterns using Python, exploratory data analysis
-(EDA), and machine learning (ML).
+Breast cancer (TCGA-BRCA) gene expression analysis: cancer vs. healthy samples.
+
 
 ## Objectives
 
@@ -25,11 +24,15 @@ This project investigates the relationships between transcription factors
 
 ## Project Structure
 
-- `data/`: raw and processed datasets.
-- `notebooks/`: exploratory analysis and experiments.
-- `src/`: reusable Python code.
-- `reports/`: figures and analysis outputs.
-- `tests/`: automated tests.
+├── data/processed/     # Generated CSV files (not tracked in git)
+├── notebooks/          # Analysis pipeline, run in order
+├── reports/            # Figures
+├── src/                # Reusable functions (see src/README.md)
+└── tests/              # automated tests.
+
+## Pipeline
+
+`01_data_processing.ipynb` | Builds raw counts and TPM matrices from the GDC TSV files, merges cancer and control samples | `src/data_process.py` |
 
 ## Getting Started
 
@@ -40,8 +43,8 @@ This project investigates the relationships between transcription factors
 
 ## Data
 
-The data sources, formats, and preprocessing steps will be documented
-here as they are established.
+Raw data is downloaded from the [GDC portal](https://portal.gdc.cancer.gov/projects/TCGA-BRCA) and is not included in the repo. Expected folders: `DATOS_CANCER` and `DATOS_CONTROL`, each with its TSV files and metadata JSON.
+
 
 ## Methodology
 

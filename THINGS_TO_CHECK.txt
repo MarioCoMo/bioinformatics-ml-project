@@ -1,1 +1,0 @@
-when 2 sequencing experiments from 1 patient --> 2 tsv detected, but when checking json metadata and creating dataframe, only 1 sequencing is saved. 1 is lost
